@@ -1,12 +1,4 @@
 class ReviewPolicy < ApplicationPolicy
-  def index?
-    return true
-  end
-
-  def show?
-    return true
-  end
-
   def create?
     user.admin? || record.user == user && user.store_owner == false
   end
@@ -15,16 +7,8 @@ class ReviewPolicy < ApplicationPolicy
     create?
   end
 
-  def update?
-  user.admin? || record.user == user && user.store_owner == false
-  end
-
-  def edit?
-    update?
-  end
-
   def destroy?
-    user.admin? || record.user == user && user.store_owner == false
+    user.admin?
   end
 
   class Scope < Scope
