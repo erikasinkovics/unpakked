@@ -1,4 +1,9 @@
 class ProductCategoriesController < ApplicationController
+  def index
+    @categories = policy_scope(ProductCategory)
+    authorize(ProductCategory)
+  end
+
   def new
     @category = ProductCategory.new
     authorize(@category)
@@ -6,22 +11,19 @@ class ProductCategoriesController < ApplicationController
 
   def create
     @category = ProductCategory.new(category_params)
-    @store = Store.find(params[:store_id])
-    @category.store = @store
     authorize(@category)
     if @category.save
-      redirect_to store_path(@store)
+      redirect_to product_categories_path
     else
       render 'new'
     end
   end
 
   def destroy
-    @store = Store.find(params[:store_id])
     @category = ProductCategory.find(params[:id])
     authorize(@category)
     @category.destroy
-    redirect_to store_path(@store)
+    redirect_to product_categories_path
   end
 
   private
