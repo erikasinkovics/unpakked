@@ -19,7 +19,7 @@ class StoresController < ApplicationController
   def create
     @store = Store.new(store_params)
     @store.user = current_user
-    @authorize(@store)
+    authorize(@store)
     if @store.save
       redirect_to store_path(@store)
     else

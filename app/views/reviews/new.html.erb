@@ -1,0 +1,6 @@
+<h1>New Review</h1>
+<%= simple_form_for [@store, @review] do |f| %>
+  <%= f.input :rating, label: 'Rating:', collection: 0..5 %>
+  <%= f.input :content, label: 'Your comments:' %>
+  <%= f.submit %>
+<% end %>

@@ -9,6 +9,7 @@ class ProductCategoryTagsController < ApplicationController
     @store = Store.find(params[:store_id])
     @tag = ProductCategoryTag.new(tag_params)
     @tag.store = @store
+    @categories = ProductCategory.all
     authorize(@tag)
 
     if @tag.save
