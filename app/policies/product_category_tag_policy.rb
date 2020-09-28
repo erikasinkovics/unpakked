@@ -1,8 +1,4 @@
-class ProductCategoryPolicy < ApplicationPolicy
-  def index?
-    return true
-  end
-
+class ProductCategoryTagPolicy < ApplicationPolicy
   def create?
     user.admin? || record.user == user
   end

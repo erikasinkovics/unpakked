@@ -1,5 +1,6 @@
 class ProductCategory < ApplicationRecord
-  belongs_to :store
+  has_many :product_category_tags
+  has_many :stores, through: :product_category_tags
 
-  validates :name, presence: true
+  validates :name, presence: true, uniqueness: true
 end
