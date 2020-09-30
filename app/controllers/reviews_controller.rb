@@ -1,5 +1,5 @@
 class ReviewsController < ApplicationController
-  before_action :set_store, only [:new, :create, :destroy]
+  before_action :set_store, only: [:new, :create, :destroy]
 
   def new
     # @store = Store.find(params[:store_id])

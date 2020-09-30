@@ -7,5 +7,5 @@ class User < ApplicationRecord
   has_many :reviews
   has_many :stores
 
-  validates :first_name, :last_name, :address, :city, :postal_code, :store_owner, presence: true
+  validates :first_name, :last_name, :address, :city, :postal_code, presence: true
 end

@@ -1,5 +1,5 @@
 class StoresController < ApplicationController
-  before_action :set_store, only [:show, :edit, :update, :destroy]
+  before_action :set_store, only: [:show, :edit, :update, :destroy]
 
   def index
     @stores = policy_scope(Store)

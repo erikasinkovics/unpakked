@@ -2,6 +2,10 @@
 
 <ul>
   <% @categories.each do |category| %>
-    <li><%= category %></li>
+    <li><%= category.name %></li>
   <% end %>
 </ul>
+
+
+<%= link_to 'Add a Category', new_product_category_path, class: 'btn btn-primary' %>
+<%= link_to 'Back to Home', root_path, class: 'btn btn-primary' %>

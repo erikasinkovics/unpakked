@@ -1,6 +1,9 @@
 <h1>All Store</h1>
 
 <% @stores.each do |store| %>
-  <%= store.name %>
-  <%= store.city %>
+  <%= link_to store.name, store_path(store) %>
 <% end %>
+
+
+<%= link_to 'Add a Store', new_store_path, class: 'btn btn-primary' %>
+<%= link_to 'Back', root_path, class: 'btn btn-primary' %>
