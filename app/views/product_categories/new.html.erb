@@ -1,0 +1,7 @@
+<h1>New Product Category</h1>
+
+<p>Please input the category you want to add. Only input one.</p>
+<%= simple_form_for(@category) do |f| %>
+  <%= f.input :name %>
+  <%= f.submit %>
+<% end %>

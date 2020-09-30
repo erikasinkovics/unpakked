@@ -1,22 +1,23 @@
 class ReviewsController < ApplicationController
-  before_action :set_store, only [:new, :create, :destroy]
+  before_action :set_store, only: [:new, :create, :destroy]
 
   def new
-    @review = Review.new
     # @store = Store.find(params[:store_id])
+    @review = Review.new
     authorize(@review)
   end
 
   def create
-    @review = Review.new(review_params)
     # @store = Store.find(params[:store_id])
+    @review = Review.new(review_params)
     @review.store = @store
     @review.user = current_user
     authorize(@review)
+
     if @review.save
       redirect_to store_path(@store)
     else
-      render 'new'
+      render :new
     end
   end
 

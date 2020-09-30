@@ -1,14 +1,15 @@
 class ProductCategoryTagsController < ApplicationController
   def new
-    @store = Store.find(params[:store_id])
     @tag = ProductCategoryTag.new
+    @store = Store.find(params[:store_id])
     authorize(@tag)
   end
 
   def create
-    @store = Store.find(params[:store_id])
     @tag = ProductCategoryTag.new(tag_params)
+    @store = Store.find(params[:store_id])
     @tag.store = @store
+    @categories = ProductCategory.all
     authorize(@tag)
 
     if @tag.save
@@ -28,6 +29,6 @@ class ProductCategoryTagsController < ApplicationController
   private
 
   def tag_params
-    params.require(:product_category_tag).permit(:store_id, :product_category_id)
+    params.require(:product_category_tag).permit(:product_category_id)
   end
 end

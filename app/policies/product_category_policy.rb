@@ -4,7 +4,7 @@ class ProductCategoryPolicy < ApplicationPolicy
   end
 
   def create?
-    user.admin? || record.user == user
+    user.admin?
   end
 
   def new?
@@ -12,7 +12,7 @@ class ProductCategoryPolicy < ApplicationPolicy
   end
 
   def destroy?
-    user.admin? || record.user == user
+    user.admin?
   end
 
   class Scope < Scope

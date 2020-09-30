@@ -1,0 +1,7 @@
+<h1>New Product Tag</h1>
+
+<p>Please select the category tag you want to add. Only select one at a time.</p>
+<%= simple_form_for [@store, @tag] do |f| %>
+  <%= f.input :product_category, collection: @categories %>
+  <%= f.submit %>
+<% end %>
