@@ -1,4 +1,6 @@
 class ProductCategoryTagsController < ApplicationController
+  # before_action :sanitize_page_params, only: [:create, :new]
+
   def new
     @tag = ProductCategoryTag.new
     @store = Store.find(params[:store_id])
@@ -6,8 +8,8 @@ class ProductCategoryTagsController < ApplicationController
   end
 
   def create
-    @tag = ProductCategoryTag.new(tag_params)
     @store = Store.find(params[:store_id])
+    @tag = ProductCategoryTag.new(tag_params)
     @tag.store = @store
     @categories = ProductCategory.all
     authorize(@tag)
@@ -27,6 +29,10 @@ class ProductCategoryTagsController < ApplicationController
   end
 
   private
+
+  # def sanitize_page_params
+  #   params[:product_category] = params[:product_category_tag][:product_category].to_i
+  # end
 
   def tag_params
     params.require(:product_category_tag).permit(:product_category_id)

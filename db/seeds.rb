@@ -1,10 +1,16 @@
 puts "Let the seeding begin!"
 puts "Destroying... everything!"
 
+Review.destroy_all
+Store.destroy_all
+User.destroy_all
 ProductCategoryTag.destroy_all
 ProductCategory.destroy_all
-User.destroy_all
-Store.destroy_all
+
+# resetting all seed IDs to start from 1 again
+ActiveRecord::Base.connection.tables.each do |t|
+  ActiveRecord::Base.connection.reset_pk_sequence!(t)
+end
 
 puts "Db is clean."
 
