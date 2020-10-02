@@ -1,11 +1,15 @@
 <h1><%= @store.name %></h1>
 
-<p><%= @store.address %></p>
-<p><%= @store.city %></p>
-<p><%= @store.postal_code %></p>
-<p><%= @store.avg_rating %></p>
-<p><%= @store.status %></p>
-
+<p>Address: <%= @store.address %></p>
+<p>City: <%= @store.city %></p>
+<p>Postal Code: <%= @store.postal_code %></p>
+<p>Average Rating: <%= @store.avg_rating %></p>
+<p>Product Tags:</p>
+<ul>
+  <% @tags.each do |tag| %>
+    <li><%= tag.name %></li>
+  <% end %>
+</ul>
 
 <%= link_to 'Add a Product Category Tag', new_store_product_category_tag_path(@store), class: 'btn btn-primary' %>
 <%= link_to 'Add a Review', new_store_review_path(@store), class: 'btn btn-primary' %>

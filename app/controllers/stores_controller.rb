@@ -8,6 +8,7 @@ class StoresController < ApplicationController
 
   def show
     # @store = Store.find(params[:id])
+    @tags = @store.product_categories
     authorize(@store)
   end
 
