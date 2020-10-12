@@ -1,12 +1,15 @@
 .card-store {
-  width: 500px;
+  width: 190px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   background-size: cover;
+  border-radius: 15px;
 }
 
 .card-store > img {
-  width: 500px;
-  height: 170px;
+  width: 190px;
+  height: 160px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   object-fit: cover;
 }
 
@@ -19,26 +22,17 @@
   position: relative;
 }
 
-.card-store-info > h2 {
-  font-size: 18px;
-}
-
 .card-store-text > h2 {
-  margin-bottom: 0;
+  margin-bottom: 2px;
+  margin-top: 7px;
+  font-family: 'Nunito', sans-serif; //variable didn't work
+  font-weight: 600;
   font-size: 18px;
 }
 
 .card-store-text > p {
-  margin-top: 0;
-}
-
-.card-store-info > img {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 1px solid grey;
-  position: absolute;
-  right: 15px;
-  bottom: 40px;
+  font-family: 'Open Sans', sans-serif; //variable didn't work
+  font-size: 11px;
+  margin-top: 2px;
+  margin-bottom: 7px;
 }
