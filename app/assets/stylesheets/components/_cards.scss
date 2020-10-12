@@ -1,0 +1,44 @@
+.card-store {
+  width: 500px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+}
+
+.card-store > img {
+  width: 500px;
+  height: 170px;
+  object-fit: cover;
+}
+
+.card-store-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+
+.card-store-info > h2 {
+  font-size: 18px;
+}
+
+.card-store-text > h2 {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.card-store-text > p {
+  margin-top: 0;
+}
+
+.card-store-info > img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  right: 15px;
+  bottom: 40px;
+}
