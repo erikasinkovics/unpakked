@@ -1,0 +1,51 @@
+.btn-green {
+  font-family: 'Nunito', sans-serif;
+  color: #ffffff;
+  background: rgb(11, 110, 70);
+  border: 1px solid rgb(11, 110, 70);
+  padding: 8px 35px;
+  border-radius: 50px;
+  font-size:  12px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.btn-green:hover {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.btn-black {
+  font-family: 'Nunito', sans-serif;
+  color: rgb(22, 25, 37);
+  border: 1px solid rgb(22, 25, 37);
+  padding: 8px 35px;
+  border-radius: 50px;
+  font-size:  12px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.btn-black:hover {
+  text-decoration: none;
+  color: rgb(75, 83, 88);
+  opacity: 1;
+}
+
+.btn-orange {
+  font-family: 'Nunito', sans-serif;
+  color: rgb(245, 157, 106);
+  border: 1px solid rgb(245, 157, 106);
+  padding: 8px 35px;
+  border-radius: 50px;
+  font-size:  12px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.btn-orange:hover {
+  text-decoration: none;
+  color: rgb(238, 113, 27);
+  opacity: 1;
+}

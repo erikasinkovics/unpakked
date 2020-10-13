@@ -8,5 +8,25 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 130px;
+}
+
+.navbar {
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.green-bar {
+  background: rgb(60, 139, 114);
+  width: 100vw;
+  a {
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff;
+    float: right; //this doesn't work
+  }
+  a:hover{
+    text-decoration: none;
+  }
 }

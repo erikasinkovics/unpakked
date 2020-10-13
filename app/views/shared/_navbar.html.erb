@@ -1,6 +1,13 @@
+<div class="green-bar navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <a href="#">FOR STORE</a>
+
+</div>
+
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+
+
   <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
+    <%= image_tag "unpakked_logo.png" %>
     <% end %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,12 +29,15 @@
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
             <%= link_to "Action", "#", class: "dropdown-item" %>
             <%= link_to "Another action", "#", class: "dropdown-item" %>
-            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item btn-orange" %>
           </div>
         </li>
       <% else %>
+        <li>
+          <input type="search">
+        </li>
         <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+          <%= link_to "Login", new_user_session_path, class: "btn-orange" %>
         </li>
       <% end %>
     </ul>
