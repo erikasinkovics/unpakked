@@ -21,10 +21,12 @@
 .green-bar {
   background: rgb(60, 139, 114);
   width: 100vw;
+  text-align: right;
+  padding-left: 40px;
+  padding-right: 40px;
   a {
     font-family: 'Nunito', sans-serif;
     color: #ffffff;
-    float: right; //this doesn't work
   }
   a:hover{
     text-decoration: none;

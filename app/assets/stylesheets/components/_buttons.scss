@@ -1,5 +1,5 @@
 .btn-green {
-  font-family: 'Nunito', sans-serif;
+  font-family: $headers-font;
   color: #ffffff;
   background: rgb(11, 110, 70);
   border: 1px solid rgb(11, 110, 70);
@@ -17,7 +17,7 @@
 }
 
 .btn-black {
-  font-family: 'Nunito', sans-serif;
+  font-family: $headers-font;
   color: rgb(22, 25, 37);
   border: 1px solid rgb(22, 25, 37);
   padding: 8px 35px;
@@ -34,7 +34,7 @@
 }
 
 .btn-orange {
-  font-family: 'Nunito', sans-serif;
+  font-family: $headers-font;
   color: rgb(245, 157, 106);
   border: 1px solid rgb(245, 157, 106);
   padding: 8px 35px;

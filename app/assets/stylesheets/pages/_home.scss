@@ -1,1 +1,85 @@
 // Specific CSS for your home-page
+.planning {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.planning-text {
+  padding-right: 70px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  h3 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  p {
+    color: rgb(75, 83, 88);
+  }
+}
+
+.planning-img {
+  padding: 30px 30px;
+}
+
+.planning-img {
+  background: black;
+}
+
+.all-stores {
+  width: 100%;
+}
+
+.store {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  h4 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+.store-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.itinerary {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 30px;
+  background: rgb(231, 241, 238);
+}
+
+.itinerary-text {
+  h3 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+}
+
+.itinerary-img {
+  img {
+    width: 400px;
+  }
+}
+
+.community {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 30px;
+  background: rgb(240, 244, 244);
+}
+
+.community-text {
+  h3 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+}
+
+.community-img {
+  img {
+    width: 400px;
+  }
+}
