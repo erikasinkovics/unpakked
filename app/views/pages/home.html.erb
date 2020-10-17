@@ -1,4 +1,88 @@
-<h1>Pages#home</h1>
+<div class="home container">
+  <div class="row planning">
+    <div class="col-sm-12 col-md-4 planning-text">
+      <h3>Plan your zero waste shopping trip</h3>
+      <p>Support local businesses</p>
+      <button class="btn-green" type="button">Plan Shopping</button>
+    </div>
+    <div class="col-sm-12 col-md-8 planning-img">
 
-<%= link_to 'All Stores', stores_path, class: 'btn btn-primary' %>
-<%= link_to 'All Categories', product_categories_path, class: 'btn btn-primary' %>
+    </div>
+  </div>
+
+  <div class="row store">
+    <div class="col-12 store-text d-flex flex-row justify-content-between">
+      <h4>Popular Stores in Montreal</h4>
+      <a href="#">View on map</a>
+    </div>
+    <div class="all-stores d-flex flex-row flex-wrap justify-content-around">
+      <div class="card-store">
+        <img src="https://images.unsplash.com/photo-1552940862-d52170cf7cfb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="">
+        <div class="card-store-info">
+          <div class="card-store-text">
+            <h2>Ô Poids Vert</h2>
+            <p>Ô poids vert est un concept d’épicerie qui encourage chaque personne à ...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-store">
+        <img src="https://images.unsplash.com/photo-1552940862-d52170cf7cfb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="">
+        <div class="card-store-info">
+          <div class="card-store-text">
+            <h2>Ô Poids Vert</h2>
+            <p>Ô poids vert est un concept d’épicerie qui encourage chaque personne à ...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-store">
+        <img src="https://images.unsplash.com/photo-1552940862-d52170cf7cfb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="">
+        <div class="card-store-info">
+          <div class="card-store-text">
+            <h2>Ô Poids Vert</h2>
+            <p>Ô poids vert est un concept d’épicerie qui encourage chaque personne à ...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-store">
+        <img src="https://images.unsplash.com/photo-1552940862-d52170cf7cfb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="">
+        <div class="card-store-info">
+          <div class="card-store-text">
+            <h2>Ô Poids Vert</h2>
+            <p>Ô poids vert est un concept d’épicerie qui encourage chaque personne à ...</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="home-bg container-fluid px-0">
+  <div class="row itinerary m-0">
+    <div class="itinerary-text col-sm-12 col-md-4">
+      <h3>Plan the optimal shopping itinerary</h3>
+      <button class="btn-black" type="button">Let's Plan A Shopping Trip</button>
+    </div>
+    <div class="itinerary-img col-sm-12 col-md-8">
+      <%= image_tag "itinerary.png" %>
+    </div>
+  </div>
+
+  <div class="row community m-0">
+    <div class="community-text col-sm-12 col-md-4">
+      <h3>Contribute to the community</h3>
+      <button class="btn-black" type="button">Browse Stores</button>
+    </div>
+    <div class="community-img col-sm-12 col-md-8">
+      <%= image_tag "community.png" %>
+    </div>
+  </div>
+
+<!--   <div class="row testing-buttons">  to be deleted later, only for testing -->
+    <%#= link_to 'All Stores', stores_path, class: 'btn-green' %>
+    <%#= link_to 'All Categories', product_categories_path, class: 'btn-black' %>
+<!--   </div> -->
+</div>

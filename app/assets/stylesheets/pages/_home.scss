@@ -1,1 +1,114 @@
 // Specific CSS for your home-page
+.home {
+  padding: 0;
+  width: 100%;
+}
+
+.planning {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.planning-text {
+  padding-right: 70px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  h3 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  p {
+    color: rgb(75, 83, 88);
+  }
+}
+
+.planning-img {
+  padding: 30px 30px;
+}
+
+.planning-img {
+  background: black;
+}
+
+.store {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
+  h4 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  a {
+    color: rgb(11, 110, 70);
+    text-decoration: none;
+    font-family: $headers-font;
+    font-weight: bold;
+  }
+}
+
+.all-stores {
+  width: 100%;
+}
+
+.store-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+.itinerary {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 90px;
+  padding-left: 90px;
+  background: rgb(231, 241, 238);
+  width: 100%;
+}
+
+.itinerary-text {
+  padding: 20px;
+  h3 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+}
+
+.itinerary-img {
+  text-align: right;
+  img {
+    width: 400px;
+  }
+}
+
+.community {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 90px;
+  padding-left: 90px;
+  background: rgb(240, 244, 244);
+  width: 100%;
+}
+
+.community-text {
+  padding: 20px;
+  h3 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+}
+
+.community-img {
+  text-align: right;
+  img {
+    width: 350px;
+  }
+}
+
+.testing-buttons {
+  padding: 30px;
+}
+

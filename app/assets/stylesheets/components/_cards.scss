@@ -1,0 +1,42 @@
+.card-store {
+  width: 190px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.card-store {
+  img {
+    width: 190px;
+    height: 160px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+  }
+}
+
+.card-store-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+
+.card-store-text > h2 {
+  margin-bottom: 2px;
+  margin-top: 7px;
+  font-family: $headers-font;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.card-store-text {
+  p {
+    font-family: $body-font;
+    font-size: 11px;
+    margin-top: 2px;
+    margin-bottom: 7px;
+  }
+}
